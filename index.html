@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generate Password</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/setting.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="c-parent">
+
+            <div class="history-parent">
+                <div class="header-ul">
+                    <p class="header-ul_ClearAll" onclick="clearAll()">Clear All</p>
+                    
+                </div>
+                
+                <div class="itemsParent"></div>
+                 
+            </div>
+
+            <div class="c-parent-box">
+            
+                <div class="ApplicationName">
+                    <p class="ApplicationName_p">Generate Random Password</p>
+                </div>
+
+                <input type="text" class="dispaly_parent" id="dispaly_parent">
+                  
+                
+
+                <div class="slider_parent">
+                    <input type="range" class="slider_parent-range" id="input" min="0" max="24" >
+                    <p class="slider_parent_p"  id="p_showRange">13 character</p>
+                </div>
+
+                <div class="button_parent">
+                    <button id="Generate" onclick="generate()">Generate</button>
+                    <button id="copy" onclick="copyToClipbord()">Copy</button>
+                </div>
+
+            </div>
+
+           
+        </div>
+
+       
+
+
+        <script src="script/script.js"></script>
+    </body>
+</html>
